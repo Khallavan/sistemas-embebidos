@@ -1,0 +1,523 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: m n mn, n , LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.8.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\falex\OneDrive\Documentos\proyectos_embebidos\auto fantastico\auto fantastico.uvprojx
+Project File Date:  02/27/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+assembling startup_stm32f767xx.s...
+compiling system_stm32f7xx.c...
+main_autofantastico.cpp(3): warning: no previous extern declaration for non-static variable 'cont' [-Wmissing-variable-declarations]
+int cont=0,i=0,pulsador1=0,pulsador2=0;
+    ^
+main_autofantastico.cpp(3): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int cont=0,i=0,pulsador1=0,pulsador2=0;
+^
+main_autofantastico.cpp(3): warning: no previous extern declaration for non-static variable 'i' [-Wmissing-variable-declarations]
+int cont=0,i=0,pulsador1=0,pulsador2=0;
+           ^
+main_autofantastico.cpp(3): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int cont=0,i=0,pulsador1=0,pulsador2=0;
+^
+main_autofantastico.cpp(3): warning: no previous extern declaration for non-static variable 'pulsador1' [-Wmissing-variable-declarations]
+int cont=0,i=0,pulsador1=0,pulsador2=0;
+               ^
+main_autofantastico.cpp(3): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int cont=0,i=0,pulsador1=0,pulsador2=0;
+^
+main_autofantastico.cpp(3): warning: no previous extern declaration for non-static variable 'pulsador2' [-Wmissing-variable-declarations]
+int cont=0,i=0,pulsador1=0,pulsador2=0;
+                           ^
+main_autofantastico.cpp(3): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int cont=0,i=0,pulsador1=0,pulsador2=0;
+^
+main_autofantastico.cpp(7): warning: use of old-style cast [-Wold-style-cast]
+        RCC->AHB1ENR|=0X3D;
+        ^~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1546): note: expanded from macro 'RCC'
+#define RCC                 ((RCC_TypeDef *) RCC_BASE)
+                             ^               ~~~~~~~~
+main_autofantastico.cpp(8): warning: use of old-style cast [-Wold-style-cast]
+        GPIOA->MODER|=0x0;
+        ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1534): note: expanded from macro 'GPIOA'
+#define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(9): warning: use of old-style cast [-Wold-style-cast]
+        GPIOC->MODER|=0x0;
+        ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1536): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(10): warning: use of old-style cast [-Wold-style-cast]
+        GPIOD->MODER|=0x15;
+        ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1537): note: expanded from macro 'GPIOD'
+#define GPIOD               ((GPIO_TypeDef *) GPIOD_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(11): warning: use of old-style cast [-Wold-style-cast]
+        GPIOE->MODER|=0x540;
+        ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1538): note: expanded from macro 'GPIOE'
+#define GPIOE               ((GPIO_TypeDef *) GPIOE_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(12): warning: use of old-style cast [-Wold-style-cast]
+        GPIOF->MODER|=0x55000;
+        ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1539): note: expanded from macro 'GPIOF'
+#define GPIOF               ((GPIO_TypeDef *) GPIOF_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(13): warning: use of old-style cast [-Wold-style-cast]
+        GPIOD->OTYPER|=0x7;
+        ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1537): note: expanded from macro 'GPIOD'
+#define GPIOD               ((GPIO_TypeDef *) GPIOD_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(14): warning: use of old-style cast [-Wold-style-cast]
+        GPIOE->OTYPER|=0x38;
+        ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1538): note: expanded from macro 'GPIOE'
+#define GPIOE               ((GPIO_TypeDef *) GPIOE_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(15): warning: use of old-style cast [-Wold-style-cast]
+        GPIOF->OTYPER|=0x3C0;
+        ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1539): note: expanded from macro 'GPIOF'
+#define GPIOF               ((GPIO_TypeDef *) GPIOF_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(16): warning: use of old-style cast [-Wold-style-cast]
+        GPIOD->OSPEEDR|=0X15;
+        ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1537): note: expanded from macro 'GPIOD'
+#define GPIOD               ((GPIO_TypeDef *) GPIOD_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(17): warning: use of old-style cast [-Wold-style-cast]
+        GPIOE->OSPEEDR|=0X540;
+        ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1538): note: expanded from macro 'GPIOE'
+#define GPIOE               ((GPIO_TypeDef *) GPIOE_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(18): warning: use of old-style cast [-Wold-style-cast]
+        GPIOF->OSPEEDR|=0X55000;
+        ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1539): note: expanded from macro 'GPIOF'
+#define GPIOF               ((GPIO_TypeDef *) GPIOF_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(19): warning: use of old-style cast [-Wold-style-cast]
+        GPIOA->PUPDR|=0X1;      
+        ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1534): note: expanded from macro 'GPIOA'
+#define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(20): warning: use of old-style cast [-Wold-style-cast]
+        GPIOC->PUPDR|=0X100;    
+        ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1536): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(21): warning: use of old-style cast [-Wold-style-cast]
+        GPIOD->PUPDR|=0X15;     
+        ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1537): note: expanded from macro 'GPIOD'
+#define GPIOD               ((GPIO_TypeDef *) GPIOD_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(22): warning: use of old-style cast [-Wold-style-cast]
+        GPIOE->PUPDR|=0X540;
+        ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1538): note: expanded from macro 'GPIOE'
+#define GPIOE               ((GPIO_TypeDef *) GPIOE_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(23): warning: use of old-style cast [-Wold-style-cast]
+        GPIOF->PUPDR|=0X55000;  
+        ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1539): note: expanded from macro 'GPIOF'
+#define GPIOF               ((GPIO_TypeDef *) GPIOF_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(26): warning: use of old-style cast [-Wold-style-cast]
+                pulsador1= GPIOC->IDR & 0x1;
+                           ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1536): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(27): warning: use of old-style cast [-Wold-style-cast]
+                pulsador2= GPIOC->IDR & 0x10;
+                           ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1536): note: expanded from macro 'GPIOC'
+#define GPIOC               ((GPIO_TypeDef *) GPIOC_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(38): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOD->ODR=0X1;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1537): note: expanded from macro 'GPIOD'
+#define GPIOD               ((GPIO_TypeDef *) GPIOD_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(45): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOD->ODR=0X2;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1537): note: expanded from macro 'GPIOD'
+#define GPIOD               ((GPIO_TypeDef *) GPIOD_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(51): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOD->ODR=0X4;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1537): note: expanded from macro 'GPIOD'
+#define GPIOD               ((GPIO_TypeDef *) GPIOD_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(57): warning: use of old-style cast [-Wold-style-cast]
+                          GPIOD->ODR=0X0;
+                          ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1537): note: expanded from macro 'GPIOD'
+#define GPIOD               ((GPIO_TypeDef *) GPIOD_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(58): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOE->ODR=0X8;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1538): note: expanded from macro 'GPIOE'
+#define GPIOE               ((GPIO_TypeDef *) GPIOE_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(64): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOE->ODR=0X10;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1538): note: expanded from macro 'GPIOE'
+#define GPIOE               ((GPIO_TypeDef *) GPIOE_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(70): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOE->ODR=0X20;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1538): note: expanded from macro 'GPIOE'
+#define GPIOE               ((GPIO_TypeDef *) GPIOE_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(76): warning: use of old-style cast [-Wold-style-cast]
+                          GPIOE->ODR=0X0;
+                          ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1538): note: expanded from macro 'GPIOE'
+#define GPIOE               ((GPIO_TypeDef *) GPIOE_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(77): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOF->ODR=0X40;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1539): note: expanded from macro 'GPIOF'
+#define GPIOF               ((GPIO_TypeDef *) GPIOF_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(83): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOF->ODR=0X80;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1539): note: expanded from macro 'GPIOF'
+#define GPIOF               ((GPIO_TypeDef *) GPIOF_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(89): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOF->ODR=0X100;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1539): note: expanded from macro 'GPIOF'
+#define GPIOF               ((GPIO_TypeDef *) GPIOF_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(95): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOF->ODR=0X200;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1539): note: expanded from macro 'GPIOF'
+#define GPIOF               ((GPIO_TypeDef *) GPIOF_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(101): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOF->ODR=0X100;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1539): note: expanded from macro 'GPIOF'
+#define GPIOF               ((GPIO_TypeDef *) GPIOF_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(107): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOF->ODR=0X80;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1539): note: expanded from macro 'GPIOF'
+#define GPIOF               ((GPIO_TypeDef *) GPIOF_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(113): warning: use of old-style cast [-Wold-style-cast]
+                          GPIOE->ODR=0X0;
+                          ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1538): note: expanded from macro 'GPIOE'
+#define GPIOE               ((GPIO_TypeDef *) GPIOE_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(114): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOF->ODR=0X40;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1539): note: expanded from macro 'GPIOF'
+#define GPIOF               ((GPIO_TypeDef *) GPIOF_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(121): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOE->ODR=0X20;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1538): note: expanded from macro 'GPIOE'
+#define GPIOE               ((GPIO_TypeDef *) GPIOE_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(127): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOE->ODR=0X10;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1538): note: expanded from macro 'GPIOE'
+#define GPIOE               ((GPIO_TypeDef *) GPIOE_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(133): warning: use of old-style cast [-Wold-style-cast]
+                          GPIOD->ODR=0X0;
+                          ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1537): note: expanded from macro 'GPIOD'
+#define GPIOD               ((GPIO_TypeDef *) GPIOD_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(134): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOE->ODR=0X8;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1538): note: expanded from macro 'GPIOE'
+#define GPIOE               ((GPIO_TypeDef *) GPIOE_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(140): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOD->ODR=0X4;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1537): note: expanded from macro 'GPIOD'
+#define GPIOD               ((GPIO_TypeDef *) GPIOD_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(146): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOD->ODR=0X2;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1537): note: expanded from macro 'GPIOD'
+#define GPIOD               ((GPIO_TypeDef *) GPIOD_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(152): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOD->ODR=0X1;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1537): note: expanded from macro 'GPIOD'
+#define GPIOD               ((GPIO_TypeDef *) GPIOD_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(163): warning: use of old-style cast [-Wold-style-cast]
+              GPIOD->ODR=0X0;
+              ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1537): note: expanded from macro 'GPIOD'
+#define GPIOD               ((GPIO_TypeDef *) GPIOD_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(164): warning: use of old-style cast [-Wold-style-cast]
+                          GPIOE->ODR=0X0;
+                          ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1538): note: expanded from macro 'GPIOE'
+#define GPIOE               ((GPIO_TypeDef *) GPIOE_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(165): warning: use of old-style cast [-Wold-style-cast]
+                          GPIOF->ODR=0X0;
+                          ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1539): note: expanded from macro 'GPIOF'
+#define GPIOF               ((GPIO_TypeDef *) GPIOF_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(168): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOD->ODR=0X1;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1537): note: expanded from macro 'GPIOD'
+#define GPIOD               ((GPIO_TypeDef *) GPIOD_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(171): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOD->ODR=0X3;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1537): note: expanded from macro 'GPIOD'
+#define GPIOD               ((GPIO_TypeDef *) GPIOD_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(174): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOD->ODR=0X7;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1537): note: expanded from macro 'GPIOD'
+#define GPIOD               ((GPIO_TypeDef *) GPIOD_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(177): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOE->ODR=0X8;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1538): note: expanded from macro 'GPIOE'
+#define GPIOE               ((GPIO_TypeDef *) GPIOE_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(180): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOE->ODR=0X18;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1538): note: expanded from macro 'GPIOE'
+#define GPIOE               ((GPIO_TypeDef *) GPIOE_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(183): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOE->ODR=0X38;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1538): note: expanded from macro 'GPIOE'
+#define GPIOE               ((GPIO_TypeDef *) GPIOE_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(186): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOF->ODR=0X40;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1539): note: expanded from macro 'GPIOF'
+#define GPIOF               ((GPIO_TypeDef *) GPIOF_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(189): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOF->ODR=0XC0;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1539): note: expanded from macro 'GPIOF'
+#define GPIOF               ((GPIO_TypeDef *) GPIOF_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(192): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOF->ODR=0X1C0;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1539): note: expanded from macro 'GPIOF'
+#define GPIOF               ((GPIO_TypeDef *) GPIOF_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(195): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOF->ODR=0X3C0;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1539): note: expanded from macro 'GPIOF'
+#define GPIOF               ((GPIO_TypeDef *) GPIOF_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(198): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOD->ODR=0X0;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1537): note: expanded from macro 'GPIOD'
+#define GPIOD               ((GPIO_TypeDef *) GPIOD_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(199): warning: use of old-style cast [-Wold-style-cast]
+                          GPIOE->ODR=0X0;
+                          ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1538): note: expanded from macro 'GPIOE'
+#define GPIOE               ((GPIO_TypeDef *) GPIOE_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(200): warning: use of old-style cast [-Wold-style-cast]
+                          GPIOF->ODR=0X0;
+                          ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1539): note: expanded from macro 'GPIOF'
+#define GPIOF               ((GPIO_TypeDef *) GPIOF_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(206): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOF->ODR=0X3C0;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1539): note: expanded from macro 'GPIOF'
+#define GPIOF               ((GPIO_TypeDef *) GPIOF_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(209): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOF->ODR=0X1C0;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1539): note: expanded from macro 'GPIOF'
+#define GPIOF               ((GPIO_TypeDef *) GPIOF_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(212): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOF->ODR=0XC0;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1539): note: expanded from macro 'GPIOF'
+#define GPIOF               ((GPIO_TypeDef *) GPIOF_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(215): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOF->ODR=0X40;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1539): note: expanded from macro 'GPIOF'
+#define GPIOF               ((GPIO_TypeDef *) GPIOF_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(219): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOE->ODR=0X38;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1538): note: expanded from macro 'GPIOE'
+#define GPIOE               ((GPIO_TypeDef *) GPIOE_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(222): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOE->ODR=0X18;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1538): note: expanded from macro 'GPIOE'
+#define GPIOE               ((GPIO_TypeDef *) GPIOE_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(225): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOE->ODR=0X8;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1538): note: expanded from macro 'GPIOE'
+#define GPIOE               ((GPIO_TypeDef *) GPIOE_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(228): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOD->ODR=0X7;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1537): note: expanded from macro 'GPIOD'
+#define GPIOD               ((GPIO_TypeDef *) GPIOD_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(232): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOD->ODR=0X3;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1537): note: expanded from macro 'GPIOD'
+#define GPIOD               ((GPIO_TypeDef *) GPIOD_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(235): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOD->ODR=0X1;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1537): note: expanded from macro 'GPIOD'
+#define GPIOD               ((GPIO_TypeDef *) GPIOD_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(238): warning: use of old-style cast [-Wold-style-cast]
+                                GPIOD->ODR=0X0;
+                                ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1537): note: expanded from macro 'GPIOD'
+#define GPIOD               ((GPIO_TypeDef *) GPIOD_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(239): warning: use of old-style cast [-Wold-style-cast]
+                          GPIOE->ODR=0X0;
+                          ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1538): note: expanded from macro 'GPIOE'
+#define GPIOE               ((GPIO_TypeDef *) GPIOE_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(240): warning: use of old-style cast [-Wold-style-cast]
+                          GPIOF->ODR=0X0;
+                          ^~~~~
+C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include\stm32f767xx.h(1539): note: expanded from macro 'GPIOF'
+#define GPIOF               ((GPIO_TypeDef *) GPIOF_BASE)
+                             ^                ~~~~~~~~~~
+main_autofantastico.cpp(244): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+76 warnings generated.
+compiling main_autofantastico.cpp...
+linking...
+Program Size: Code=4000 RO-data=520 RW-data=0 ZI-data=1648  
+".\Objects\auto fantastico.axf" - 0 Error(s), 76 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F7xx_DFP.2.15.1.pack
+                Keil.STM32F7xx_DFP.2.15.1
+                STMicroelectronics STM32F7 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.2.5
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/falex/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/falex/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.15.1/Drivers/CMSIS/Device/ST/STM32F7xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:1.2.5
+      Source file:   MDK/Device/Source/ARM/STM32F76x_77x_OPT.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F7xx/Source/Templates/arm/startup_stm32f767xx.s
+      Include file:  Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h
+      Source file:   MDK/Device/Source/ARM/STM32F76x_77x_OTP.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F7xx/Source/Templates/system_stm32f7xx.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

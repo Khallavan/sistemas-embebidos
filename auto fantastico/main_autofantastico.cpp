@@ -1,0 +1,244 @@
+#include<stdio.h>
+#include<stm32f767xx.h>
+int cont=0,i=0,pulsador1=0,pulsador2=0;
+
+int main(void){
+
+	RCC->AHB1ENR|=0X3D;
+	GPIOA->MODER|=0x0;
+	GPIOC->MODER|=0x0;
+	GPIOD->MODER|=0x15;
+	GPIOE->MODER|=0x540;
+	GPIOF->MODER|=0x55000;
+	GPIOD->OTYPER|=0x7;
+	GPIOE->OTYPER|=0x38;
+	GPIOF->OTYPER|=0x3C0;
+	GPIOD->OSPEEDR|=0X15;
+	GPIOE->OSPEEDR|=0X540;
+	GPIOF->OSPEEDR|=0X55000;
+	GPIOA->PUPDR|=0X1; 	
+	GPIOC->PUPDR|=0X100; 	
+	GPIOD->PUPDR|=0X15; 	
+	GPIOE->PUPDR|=0X540;
+	GPIOF->PUPDR|=0X55000; 	
+	
+	while(true){
+		pulsador1= GPIOC->IDR & 0x1;
+		pulsador2= GPIOC->IDR & 0x10;
+		if((pulsador1)==0x1){
+		//inicio de secuencia 1 auto fantastico
+		while(true){
+			
+			
+			if((pulsador2)==0x10){
+		break;
+		}
+			
+		for(cont=0;cont<100000;cont++){
+				GPIOD->ODR=0X1;
+		
+		}
+		if((pulsador2)==0x10){
+		break;
+		}
+		for(cont=0;cont<100000;cont++){
+				GPIOD->ODR=0X2;
+		}
+		if((pulsador2)==0x10){
+		break;
+		}
+		for(cont=0;cont<100000;cont++){
+				GPIOD->ODR=0X4;
+		}
+		if((pulsador2)==0x10){
+		break;
+		}
+		for(cont=0;cont<100000;cont++){
+			  GPIOD->ODR=0X0;
+				GPIOE->ODR=0X8;
+		}
+		if((pulsador2)==0x10){
+		break;
+		}
+		for(cont=0;cont<100000;cont++){
+				GPIOE->ODR=0X10;
+		}
+		if((pulsador2)==0x10){
+		break;
+		}
+		for(cont=0;cont<100000;cont++){
+				GPIOE->ODR=0X20;
+		}
+		if((pulsador2)==0x10){
+		break;
+		}
+		for(cont=0;cont<100000;cont++){
+			  GPIOE->ODR=0X0;
+				GPIOF->ODR=0X40;
+		}
+		if((pulsador2)==0x10){
+		break;
+		}
+		for(cont=0;cont<100000;cont++){
+				GPIOF->ODR=0X80;
+		}
+		if((pulsador2)==0x10){
+		break;
+		}
+		for(cont=0;cont<100000;cont++){
+				GPIOF->ODR=0X100;
+		}
+		if((pulsador2)==0x10){
+		break;
+		}
+		for(cont=0;cont<100000;cont++){
+				GPIOF->ODR=0X200;
+		}
+		if((pulsador2)==0x10){
+		break;
+		}
+		for(cont=0;cont<100000;cont++){
+				GPIOF->ODR=0X100;
+		}
+		if((pulsador2)==0x10){
+		break;
+		}
+			for(cont=0;cont<100000;cont++){
+				GPIOF->ODR=0X80;
+		}
+			if((pulsador2)==0x10){
+		break;
+		}
+			for(cont=0;cont<100000;cont++){
+			  GPIOE->ODR=0X0;
+				GPIOF->ODR=0X40;
+		}
+			if((pulsador2)==0x10){
+		break;
+		}
+			
+		for(cont=0;cont<100000;cont++){
+				GPIOE->ODR=0X20;
+		}
+		if((pulsador2)==0x10){
+		break;
+		}
+			for(cont=0;cont<100000;cont++){
+				GPIOE->ODR=0X10;
+		}
+			if((pulsador2)==0x10){
+		  break;
+		}
+		 for(cont=0;cont<100000;cont++){
+			  GPIOD->ODR=0X0;
+				GPIOE->ODR=0X8;
+		}
+		 if((pulsador2)==0x10){
+		break;
+		}
+		 		for(cont=0;cont<100000;cont++){
+				GPIOD->ODR=0X4;
+		}
+				if((pulsador2)==0x10){
+		break;
+		}
+				for(cont=0;cont<100000;cont++){
+				GPIOD->ODR=0X2;
+		}
+		if((pulsador2)==0x10){
+		break;
+		}
+		for(cont=0;cont<100000;cont++){
+				GPIOD->ODR=0X1;
+		}
+		if((pulsador2)==0x10){
+		break;
+		}
+		//final de secuencia 1 auto fantastico 
+		}	
+	}
+			
+	//inicio de sencuencia 2 a la derecha 
+	else if ((pulsador2)==0x10){
+	      GPIOD->ODR=0X0;
+			  GPIOE->ODR=0X0;
+			  GPIOF->ODR=0X0;
+	   
+		for(cont=0;cont<100000;cont++){
+				GPIOD->ODR=0X1;
+		}
+		for(cont=0;cont<100000;cont++){
+				GPIOD->ODR=0X3;
+		}
+		for(cont=0;cont<100000;cont++){
+				GPIOD->ODR=0X7;
+		}
+		for(cont=0;cont<100000;cont++){
+				GPIOE->ODR=0X8;
+		}
+		for(cont=0;cont<100000;cont++){
+				GPIOE->ODR=0X18;
+		}
+		for(cont=0;cont<100000;cont++){
+				GPIOE->ODR=0X38;
+		}
+		for(cont=0;cont<100000;cont++){
+				GPIOF->ODR=0X40;
+		}
+		for(cont=0;cont<100000;cont++){
+				GPIOF->ODR=0XC0;
+		}
+		for(cont=0;cont<100000;cont++){
+				GPIOF->ODR=0X1C0;
+		}
+		for(cont=0;cont<100000;cont++){
+				GPIOF->ODR=0X3C0;
+		}
+		for(cont=0;cont<100000;cont++){
+				GPIOD->ODR=0X0;
+			  GPIOE->ODR=0X0;
+			  GPIOF->ODR=0X0;
+		}
+		
+		//secuencia 2 a la izquierda 
+		
+		for(cont=0;cont<100000;cont++){
+				GPIOF->ODR=0X3C0;
+		}
+			for(cont=0;cont<100000;cont++){
+				GPIOF->ODR=0X1C0;
+		}
+		for(cont=0;cont<100000;cont++){
+				GPIOF->ODR=0XC0;
+		}
+		for(cont=0;cont<100000;cont++){
+				GPIOF->ODR=0X40;
+		}
+	  	
+		for(cont=0;cont<100000;cont++){
+				GPIOE->ODR=0X38;
+		}
+		for(cont=0;cont<100000;cont++){
+				GPIOE->ODR=0X18;
+		}
+			for(cont=0;cont<100000;cont++){
+				GPIOE->ODR=0X8;
+		}
+			for(cont=0;cont<100000;cont++){
+				GPIOD->ODR=0X7;
+		}
+		
+		for(cont=0;cont<100000;cont++){
+				GPIOD->ODR=0X3;
+		}
+		for(cont=0;cont<100000;cont++){
+				GPIOD->ODR=0X1;
+		}
+		for(cont=0;cont<100000;cont++){
+				GPIOD->ODR=0X0;
+			  GPIOE->ODR=0X0;
+			  GPIOF->ODR=0X0;
+		}
+	}
+}
+}
